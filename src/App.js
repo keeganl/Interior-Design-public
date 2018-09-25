@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
-import user from './assets/ProfilePic.png'
+import user from './assets/ProfilePic.png';
 import './sass/App.css';
 
-import ColorPalette from './components/ColorPalette'
+import ColorPalette from './components/ColorPalette';
+import LoginModal from './components/Modals/loginModal';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state ={
+
+    };
+
+  }
+
   render() {
     return (
       <div className="container">
@@ -23,8 +32,10 @@ class App extends Component {
           <h2>Generate a color pallete</h2>
           <ColorPalette />
         </div>
+        <LoginModal></LoginModal>
       </div>
-
+      
+    
     );
   }
 }
