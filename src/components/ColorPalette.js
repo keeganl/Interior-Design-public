@@ -4,7 +4,7 @@ let colors = ["#33658A", "#86BBD8", "#2F4858", "#F6AE2D", "#F26419"]
 
 class ColorPalette extends Component {
   constructor(props) {
-    super(props);
+    super(props)
      this.state = {
        color: colors[0]
      }

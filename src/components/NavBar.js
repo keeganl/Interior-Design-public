@@ -28,8 +28,8 @@ class NavBar extends Component {
           <li>5</li>
         </ul>
       </React.Fragment>
-    );
+    )
   }
 }
 
-export default NavBar;
+export default NavBar
