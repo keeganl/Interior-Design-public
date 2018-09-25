@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import user from './assets/ProfilePic.png'
 import './sass/App.css';
 
+import ColorPalette from './components/ColorPalette'
+
 class App extends Component {
   render() {
     return (
@@ -19,15 +21,10 @@ class App extends Component {
         <div className="main">
           <h1>Interior Design</h1>
           <h2>Generate a color pallete</h2>
-          <div className="colorContainer">
-            <div className="color">1</div>
-            <div className="color">2</div>
-            <div className="color">3</div>
-            <div className="color">4</div>
-            <div className="color">5</div>
-          </div>
+          <ColorPalette />
         </div>
       </div>
+
     );
   }
 }
