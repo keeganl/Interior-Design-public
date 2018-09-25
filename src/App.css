@@ -1,28 +1,49 @@
-.App {
-  text-align: center;
+body { 
+  font-family: 'Quicksand', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: baseline;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.sidebar {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-shrink: 1;
+  background-color: #EAEAEA;
+  padding: 3em;
 }
 
-.App-title {
-  font-size: 1.5em;
+.sidebar > ul {
+  list-style: none;
 }
 
-.App-intro {
-  font-size: large;
+.sidebar > ul > li { 
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #F2F2F2;
+}
+
+.main > h1 { 
+  text-align: left;
+}
+
+.colorContainer {
+  margin: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center
+}
+
+.color {
+  background-color: coral;
+  padding: 5em;
 }
