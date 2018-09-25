@@ -452,6 +452,7 @@ body {
 }
 
 .banner-container .banner-items #signup {
+  cursor: pointer;
   padding: 1em;
   background-color: white;
   color: #33B5E5;
@@ -467,6 +468,7 @@ body {
 }
 
 .banner-container .banner-items #login {
+  cursor: pointer;
   padding: 1em;
   background-color: #33B5E5;
   color: white;
