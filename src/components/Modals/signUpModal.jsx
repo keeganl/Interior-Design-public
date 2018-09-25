@@ -14,7 +14,7 @@ const customStyles = {
 
 Modal.setAppElement(document.getElementById('root'))
 
-class LoginModal extends Component {
+class SignUpModal extends Component {
   constructor(props) {
     super(props)
     console.log(props)
@@ -25,7 +25,7 @@ class LoginModal extends Component {
     this.openModal = this.openModal.bind(this)
     this.afterOpenModal = this.afterOpenModal.bind(this)
     this.closeModal = this.closeModal.bind(this)
-    this.login = this.login.bind(this)
+    this.signUp = this.signUp.bind(this)
   }
 
   openModal() {
@@ -40,23 +40,27 @@ class LoginModal extends Component {
     this.setState({modalIsOpen: false})
   }
 
-  login() {
-    //SOME CALL TO CHECK IF NAME AND PASS MATCHES
-
+  signUp() {
+    //TODO: SOME CALL TO CREATE A NEW USER
+    
   }
 
   render() {
     return (
       <div>
-        <button id="login" onClick={this.openModal}>Login</button>
+        <button id="signup" onClick={this.openModal}>Sign Up</button>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           style={customStyles}
           contentLabel="Example Modal">
-          <h2>Login</h2>
+          <h2>Sign Up</h2>
           <form>
+            <div>
+              <label>Email Address: </label>
+              <div><input /></div>
+            </div>
             <div>
               <label>Username: </label>
               <div><input /></div>
@@ -65,14 +69,18 @@ class LoginModal extends Component {
               <label>Password: </label>
               <div><input /></div>
             </div>
+            <div>
+              <label>Confirm Password: </label>
+              <div><input /></div>
+            </div>
           </form>
           <br/>
           <button onClick={this.closeModal}>Cancel</button>
-          <button onClick={this.login}>Login</button>
+          <button onClick={this.signUp}>Sign Up</button>
         </Modal>
       </div>
     )
   }
 }
 
-export default LoginModal
+export default SignUpModal

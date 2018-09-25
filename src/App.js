@@ -1,43 +1,34 @@
-import React, { Component } from 'react';
-import user from './assets/ProfilePic.png';
-import './sass/App.css';
+import React, { Component } from 'react'
+import './sass/App.css'
 
-import ColorPalette from './components/ColorPalette';
-import LoginModal from './components/Modals/loginModal';
+import ColorPalette from './components/ColorPalette'
+import NavBar from './components/NavBar'
+import WelcomeBanner from './components/WelcomeBanner'
+
+
+let username = ['username', 'Keegan', 'Braeden', 'Zach', 'Vinny']
 
 class App extends Component {
-  constructor(props){
-    super(props);
-    this.state ={
-
-    };
-
+  constructor(props) {
+    super(props)
   }
-
+  
   render() {
     return (
       <div className="container">
         <div className="sidebar">
-          <ul>
-            <li><img src={user} width="100px" height="100px"  alt="Profile"/></li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-          </ul>
+          <NavBar name={username[0]} />
         </div>
         <div className="main">
-          <h1>Interior Design</h1>
+          <WelcomeBanner />
           <h2>Generate a color pallete</h2>
           <ColorPalette />
         </div>
-        <LoginModal></LoginModal>
       </div>
       
     
-    );
+    )
   }
 }
 
-export default App;
+export default App
