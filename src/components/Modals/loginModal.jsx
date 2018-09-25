@@ -54,9 +54,9 @@ class LoginModal extends Component {
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           style={customStyles}
-          contentLabel="Example Modal">
-          <h2>Login</h2>
-          <form>
+          contentLabel="Login Modal">
+          <h2 className="modal-header">Login</h2>
+          <form className="modal-body">
             <div>
               <label>Username: </label>
               <div><input /></div>
@@ -67,8 +67,8 @@ class LoginModal extends Component {
             </div>
           </form>
           <br/>
-          <button onClick={this.closeModal}>Cancel</button>
-          <button onClick={this.login}>Login</button>
+          <button className="modal-cancel-button" onClick={this.closeModal}>Cancel</button>
+          <button className="modal-confirm-button" onClick={this.login}>Login</button>
         </Modal>
       </div>
     )

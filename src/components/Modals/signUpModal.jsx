@@ -54,9 +54,9 @@ class SignUpModal extends Component {
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           style={customStyles}
-          contentLabel="Example Modal">
-          <h2>Sign Up</h2>
-          <form>
+          contentLabel="Sign Up Modal">
+          <h2 className="modal-header">Sign Up</h2>
+          <form className="modal-body">
             <div>
               <label>Email Address: </label>
               <div><input /></div>
@@ -75,8 +75,8 @@ class SignUpModal extends Component {
             </div>
           </form>
           <br/>
-          <button onClick={this.closeModal}>Cancel</button>
-          <button onClick={this.signUp}>Sign Up</button>
+          <button className="modal-cancel-button" onClick={this.closeModal}>Cancel</button>
+          <button className="modal-confirm-button" onClick={this.signUp}>Sign Up</button>
         </Modal>
       </div>
     )
