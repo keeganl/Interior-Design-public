@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import user from './assets/ProfilePic.png'
 import './sass/App.css';
 
 class App extends Component {
@@ -7,7 +8,7 @@ class App extends Component {
       <div className="container">
         <div className="sidebar">
           <ul>
-            <li><img src="" alt="Profile"/></li>
+            <li><img src={user} width="100px" height="100px"  alt="Profile"/></li>
             <li>1</li>
             <li>2</li>
             <li>3</li>
@@ -16,7 +17,8 @@ class App extends Component {
           </ul>
         </div>
         <div className="main">
-          <h1>Generate a color pallete</h1>
+          <h1>Interior Design</h1>
+          <h2>Generate a color pallete</h2>
           <div className="colorContainer">
             <div className="color">1</div>
             <div className="color">2</div>
