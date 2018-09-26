@@ -336,6 +336,10 @@ textarea {
   font: inherit;
 }
 
+h4 {
+  margin: 0;
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
 }
@@ -481,5 +485,54 @@ body {
   transition: 0.6s;
   background-color: #2589AE;
   color: white;
+}
+
+.modal-header {
+  text-align: center;
+  margin: 0.5em;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-body .input-field .labels {
+  margin: 0.25em;
+  background-color: #222;
+}
+
+.modal-body .input-field .signup-fields {
+  width: 50%;
+  border: 2px solid #D8D8D8;
+  border-radius: .25EM;
+  margin: 0.25em;
+  padding: 1em;
+}
+
+.modal-body button {
+  margin: 1em;
+  padding: 1em;
+  border: 0;
+  border-radius: 0.25em;
+}
+
+.modal-body .modal-cancel-button {
+  background-color: #FF3E3E;
+  color: white;
+}
+
+.modal-body .modal-cancel-button:hover {
+  -webkit-box-shadow: 0px 0px 2px #ED3C3C;
+          box-shadow: 0px 0px 2px #ED3C3C;
+}
+
+.modal-body .modal-confirm-button {
+  background-color: #00CC13;
+  color: white;
+}
+
+.modal-body .modal-confirm-button:hover {
+  -webkit-box-shadow: 0px 0px 2px #65C95D;
+          box-shadow: 0px 0px 2px #65C95D;
 }
 /*# sourceMappingURL=App.css.map */

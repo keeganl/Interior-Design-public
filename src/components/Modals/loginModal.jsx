@@ -2,13 +2,15 @@ import React, {Component} from 'react'
 import Modal from 'react-modal'
 
 const customStyles = {
-  content : {
-    top                   : '50%',
-    left                  : '50%',
-    right                 : 'auto',
-    bottom                : 'auto',
-    marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
+  content: {
+    width: '30%',
+    padding: '3em',
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)'
   }
 }
 
@@ -57,18 +59,23 @@ class LoginModal extends Component {
           contentLabel="Login Modal">
           <h2 className="modal-header">Login</h2>
           <form className="modal-body">
-            <div>
-              <label>Username: </label>
-              <div><input /></div>
+            <div className="input-field">
+              <label className="labels" for="username">
+                <h4>Username</h4>
+              </label>
+              <div><input className="signup-fields" type="text" name="username" id="username" /></div>
             </div>
-            <div>
-              <label>Password: </label>
-              <div><input /></div>
+            <div className="input-field">
+              <label className="labels">
+                <h4>Password</h4> 
+              </label>
+              <div><input className="signup-fields" /></div>
             </div>
+          <div>
+            <button className="modal-cancel-button" onClick={this.closeModal}>Cancel</button>
+            <button className="modal-confirm-button" onClick={this.login}>Login</button>
+          </div>
           </form>
-          <br/>
-          <button className="modal-cancel-button" onClick={this.closeModal}>Cancel</button>
-          <button className="modal-confirm-button" onClick={this.login}>Login</button>
         </Modal>
       </div>
     )
