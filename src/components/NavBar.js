@@ -3,6 +3,7 @@ import user from '../assets/ProfilePic.png'
 
 
 
+
 class NavBar extends Component {
   constructor(props) {
     super(props)
