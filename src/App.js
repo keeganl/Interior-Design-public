@@ -4,13 +4,13 @@ import './sass/App.css'
 import ColorPalette from './components/ColorPalette'
 import NavBar from './components/NavBar'
 import WelcomeBanner from './components/WelcomeBanner'
-
+import UploadImg from './components/UploadImg'
 
 let username = ['username', 'Keegan', 'Braeden', 'Zach', 'Vinny']
 
 class App extends Component {
   constructor(props) {
-    super(props)
+    super(props)     
   }
   
   render() {
@@ -23,10 +23,11 @@ class App extends Component {
           <WelcomeBanner />
           <h2>Generate a color pallete</h2>
           <ColorPalette />
+          <h2>Upload an image</h2>
+          <UploadImg />
         </div>
       </div>
-      
-    
+
     )
   }
 }

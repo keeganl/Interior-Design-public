@@ -1,0 +1,36 @@
+$iphone-portrait: 320px
+$iphone-landscape: 480px
+$in-between-portrait: 481px
+$in-between-landscape: 767px
+$ipad-portrait: 768px
+$ipad-landscape: 1024px
+$in-between-lg-portrait: 1025px
+$in-between-lg-landscape: 1223px
+$desktop: 1224px
+$desktop-large: 1824px
+
+=respond-to($device)
+
+  @if $device == retina-display
+    @media only screen and (-webkit-min-device-pixel-ratio: 2)
+      @content
+
+  @if $device == iphone
+    @media only screen and (min-width: $iphone-portrait) and (max-width: $iphone-landscape)
+      @content
+
+  @if $device == ipad
+    @media only screen and (min-width: $ipad-portrait) and (max-width: $ipad-landscape)
+      @content
+  
+  @if $device == inbetween
+    @media only screen and (min-width: $in-between-portrait) and (max-width: $in-between-landscape)
+      @content
+
+  @if $device == inbetween-lg
+    @media only screen and (min-width: $in-between-lg-portrait) and (max-width: $in-between-lg-landscape)
+      @content
+      
+  @if $device == desktop
+    @media only screen and (min-width: $desktop) and (max-width: $desktop-large)
+      @content
