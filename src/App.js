@@ -9,9 +9,9 @@ import UploadImg from './components/UploadImg'
 let username = ['username', 'Keegan', 'Braeden', 'Zach', 'Vinny']
 
 class App extends Component {
-  constructor(props) {
-    super(props)     
-  }
+  //constructor(props) {
+  //  super(props)     
+  //}
   
   render() {
     return (

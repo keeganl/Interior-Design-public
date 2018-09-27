@@ -5,12 +5,12 @@ import user from '../assets/ProfilePic.png'
 
 
 class NavBar extends Component {
-  constructor(props) {
-    super(props)
+  //constructor(props) {
+  //  super(props)
     // this.state = {
     //   name: username[0]
     // } 
-  }
+  //}
 
   // componentDidMount() {
   //   this.setState({ name: username[1] })
