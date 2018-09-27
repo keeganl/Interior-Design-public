@@ -6,8 +6,9 @@ import SignUpModal from './Modals/signUpModal'
 class WelcomeBanner extends Component { 
   constructor(props) {
     super(props)
+    console.log(props)
     this.state = {
-      
+
     }
   }
   render() {
