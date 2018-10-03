@@ -1,0 +1,61 @@
+body 
+	font-family: 'Quicksand', sans-serif 
+	font-weight: 200
+.container 
+	height: 100%
+	display: flex 
+	flex-flow: row nowrap 
+	justify-content: baseline 
+.sidebar 
+	display: flex 
+	flex-flow: column nowrap 
+  justify-content: center
+	flex-shrink: 1 
+	background-color: #FAFAFA 
+	border-right: 1px solid #E8E8E8
+	padding: 3em 
+	& > ul 
+		list-style: none
+		padding-inline-start: 0;
+		& > li 
+      padding: 1em 
+      text-align: center
+.main 
+	display: flex 
+	flex-flow: column nowrap 
+	flex-grow: 1 
+	background-color: white
+  margin: 1em
+	h1 
+		font-weight: 200 
+		// margin: .5em 
+		text-align: center 
+	h2 
+		font-weight: 200 
+		margin-left: 2vw
+.colorContainer 
+	margin: 1em 
+	display: flex 
+	flex-flow: row nowrap 
+	justify-content: center 
+.color 
+	background-color: coral 
+	padding: 6em 
+.imageContainer 
+	margin: 1em 
+	display: flex 
+	flex-flow: column nowrap 
+	// align-items: center
+.image
+	text-align: center 
+	// background-color: coral 
+	margin: 2em 
+	label
+		margin-top: 5em
+		padding: 1.5em 2em
+		background-color: #33B5E5
+		color: white
+		border-radius: .5em
+		input[type="file"]
+			display: none
+			
